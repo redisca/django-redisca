@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template list</title>
+</head>
+<style>
+  body {
+    font-family: sans-serif;
+  }
+</style>
+<body>
+
+  <h1>Templates</h1>
+
+  <ul style="font-size: 1.3em;">
+    {% for template in templates %}
+      <li>
+        <a href="{{ template }}">{{ template }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+</body>
+</html>

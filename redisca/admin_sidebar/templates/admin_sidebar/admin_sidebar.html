@@ -1,0 +1,20 @@
+<div class="admin-menu">
+  <div class="admin-menu-wrapper">
+    <ul class="admin-menu_items">
+      {% for name, url, childs in items %}
+        <li class="admin-menu_item">
+          <a href="{{ url }}">{{ name }}</a>
+          {% if childs %}
+            <ul class="admin-menu_item-childs">
+              {% for name, url in childs %}
+                <li class="admin-menu_item-child">
+                  <a href="{{ url }}">{{ name }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

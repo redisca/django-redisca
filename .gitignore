@@ -1,0 +1,10 @@
+__pycache__
+*.egg-info
+*.pyc
+.idea
+.venvrc
+.coverage
+.cache
+project
+htmlcov
+docs

@@ -1,0 +1,6 @@
+[run]
+source = redisca
+omit = **migrations**,**tests**
+
+[report]
+include = ./redisca/*
